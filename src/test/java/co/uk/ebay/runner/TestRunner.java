@@ -1,5 +1,6 @@
 package co.uk.ebay.runner;
 
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -11,6 +12,8 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/java/co/uk/ebay/features"
 		,glue = {"co/uk/ebay/hooks","co/uk/ebay/stepdefinitions"}
 		,tags = {"~@ignore"}
+		,dryRun = false
+		,monochrome = false		
 		
 		)
 public class TestRunner {
